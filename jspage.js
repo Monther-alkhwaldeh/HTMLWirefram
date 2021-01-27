@@ -1,5 +1,6 @@
 var typeoflaptob=prompt("which type of laptob do you want");
 var nooflaptob=prompt("how many laptob do you want");
+var youraddres=prompt("what is your adress");
 
 var orderdetails;
 
@@ -18,6 +19,8 @@ orderdetails="you get 10% discount";
 document.write(orderdetails);
 document.getElementById("order").innerText=typeoflaptob;
 document.getElementById("nolaptob").innerText=nooflaptob;
+document.getElementById("youradd").innerText=youraddres;
+
 
 confirm("Are you happy with you discount ");
 alert("thank you for shopping from our shop");
