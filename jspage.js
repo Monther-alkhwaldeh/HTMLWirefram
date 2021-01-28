@@ -15,19 +15,16 @@ if (nooflaptob > 1 && nooflaptob <= 3) {
 }
 
 
-document.write(orderdetails);
-document.getElementById("order").innerText = typeoflaptob;
-document.getElementById("nolaptob").innerText = nooflaptob;
-document.getElementById("youradd").innerText = youraddres;
-
-
-
 
 while (typeoflaptob !== 'toshiba' && typeoflaptob !== 'hp') {
     typeoflaptob = prompt('which type of laptob do you want toshiba or hp');
     nooflaptob = prompt('how many laptob do you want')
     youraddres = prompt("what is your adress");
 }
+document.write(orderdetails);
+document.getElementById("order").innerText = typeoflaptob;
+document.getElementById("nolaptob").innerText = nooflaptob;
+document.getElementById("youradd").innerText = youraddres;
 
 var pic = '';
 if (typeoflaptob === 'hp') {
