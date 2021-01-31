@@ -41,4 +41,38 @@ alert("thank you for shopping from our shop");
 
 document.write(result);
 
+function getname() {
+    var username = prompt('enter user name');
+    console.log(username);
+}
+function getpassword() {
+    var passowrd = prompt('enter your password');
+    console.log(typeof prompt);
+    console.log(passowrd);
+}
+
+getname();
+getpassword();
+var hp = '100';
+var toshiba = '200';
+
+var getpricelap = function (nooflaptob) {
+    if (typeoflaptob === 'hp') {
+        var pricehp = hp * nooflaptob;
+        return pricehp;
+    }
+    else if (typeoflaptob === 'toshiba') {
+        var pricetoshiba = toshiba * nooflaptob;
+        return pricetoshiba;
+    }
+};
+
+
+
+var pricesum = getpricelap(nooflaptob);
+alert(pricesum + '$');
+document.write(pricesum);
+console.log(getpricehp(nooflaptob));
+
+
 
